@@ -10,7 +10,7 @@
 [![License](https://poser.pugx.org/bavix/validator/license)](https://packagist.org/packages/bavix/validator)
 [![composer.lock](https://poser.pugx.org/bavix/validator/composerlock)](https://packagist.org/packages/bavix/validator)
 
-Helpers - Set of assistants in development.
+Validation library.
 
 * **Vendor**: bavix
 * **Package**: Validator
