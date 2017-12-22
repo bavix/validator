@@ -14,7 +14,7 @@ class LengthMinRule extends Rule
     /**
      * @var int
      */
-    protected static $code = self::RULE_MIN;
+    protected static $code = self::RULE_LENGTH_MIN;
 
     /**
      * @var string

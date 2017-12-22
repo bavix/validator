@@ -12,12 +12,12 @@ class FloatRule extends Rule
     /**
      * @var int
      */
-    protected static $code = self::RULE_INT;
+    protected static $code = self::RULE_FLOAT;
 
     /**
      * @var string
      */
-    protected static $error = 'must be an int';
+    protected static $error = 'must be an float';
 
     /**
      * @param string      $key

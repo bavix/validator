@@ -14,7 +14,7 @@ class LengthMaxRule extends Rule
     /**
      * @var int
      */
-    protected static $code = self::RULE_MAX;
+    protected static $code = self::RULE_LENGTH_MAX;
 
     /**
      * @var string
