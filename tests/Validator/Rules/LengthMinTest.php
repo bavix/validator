@@ -5,22 +5,18 @@ namespace Tests\Validator\Rules;
 use Bavix\Validator\Response;
 use Tests\Unit;
 
-class MinTest extends Unit
+class LengthMinTest extends Unit
 {
 
     public function testUnit()
     {
 
         $data = [
-            'age'    => 44,
-            'number' => 3,
-            'name'   => 'hello'
+            'login'    => 'bavix',
         ];
 
         $fields = [
-            'age'    => 'min:10',
-            'number' => 'min:2',
-            'name'   => 'min:g' // f g h
+            'login'    => 'lengthMin:4',
         ];
 
         $response = $this->validator->apply($data, $fields);
@@ -28,15 +24,12 @@ class MinTest extends Unit
         $this->assertInstanceOf(Response::class, $response);
         $this->assertTrue($response->valid());
 
-        $data['age'] = 9;
-        $data['name'] = 'f'; // f < g
+        $data['login'] = 'bx';
 
         $response = $this->validator->apply($data, $fields);
 
         $this->assertFalse($response->valid());
-        $this->assertFalse($response->has('number'));
-        $this->assertTrue($response->has('age'));
-        $this->assertTrue($response->has('name'));
+        $this->assertTrue($response->has('login'));
 
     }
 
@@ -47,13 +40,11 @@ class MinTest extends Unit
     {
 
         $data = [
-            'age'    => 44,
-            'number' => 3
+            'login'    => 'bavix',
         ];
 
         $fields = [
-            'age'    => 'min',
-            'number' => 'min:2',
+            'login'    => 'lengthMin',
         ];
 
         $this->validator->apply($data, $fields);
