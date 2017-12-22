@@ -1,0 +1,19 @@
+{
+  "name": "bavix/validator",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "REZ1DENT3",
+      "email": "info@babichev.net"
+    }
+  ],
+  "require": {
+    "bavix/slice": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bavix\\": "src/"
+    }
+  }
+}
