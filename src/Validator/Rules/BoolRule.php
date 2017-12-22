@@ -36,9 +36,9 @@ class BoolRule extends Rule
             {
                 return;
             }
-        }
 
-        throw new Invalid($this->error(), static::$code);
+            throw new Invalid($this->error(), static::$code);
+        }
     }
 
 }

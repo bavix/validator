@@ -19,6 +19,7 @@ class Validator
     protected $ruleMap = [
         'required'  => Rules\RequiredRule::class,
         'int'       => Rules\IntRule::class,
+        'float'     => Rules\FloatRule::class,
         'bool'      => Rules\BoolRule::class,
         'min'       => Rules\MinRule::class,
         'max'       => Rules\MaxRule::class,
