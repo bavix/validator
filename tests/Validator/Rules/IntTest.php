@@ -8,7 +8,7 @@ use Tests\Unit;
 class IntTest extends Unit
 {
 
-    public function testBool()
+    public function testUnit()
     {
 
         $data = [

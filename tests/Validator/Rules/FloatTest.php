@@ -8,7 +8,7 @@ use Tests\Unit;
 class FloatTest extends Unit
 {
 
-    public function testBool()
+    public function testUnit()
     {
 
         $data = [
@@ -19,11 +19,11 @@ class FloatTest extends Unit
         ];
 
         $fields = [
-            'no-float'  => 'float',
-            'float'  => 'float',
-            'number' => 'float',
-            'age'    => 'float',
-            'length' => 'float',
+            'no-float' => 'float',
+            'float'    => 'float',
+            'number'   => 'float',
+            'age'      => 'float',
+            'length'   => 'float',
         ];
 
         $response = $this->validator->apply($data, $fields);

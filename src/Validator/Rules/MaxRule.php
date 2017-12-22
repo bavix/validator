@@ -29,7 +29,7 @@ class MaxRule extends Rule
      */
     public function validate(string $key, &$data, string $argument = null)
     {
-        if ($argument === null)
+        if (null === $argument)
         {
             throw new Runtime(__CLASS__);
         }

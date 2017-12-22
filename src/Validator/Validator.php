@@ -2,6 +2,7 @@
 
 namespace Bavix\Validator;
 
+use Bavix\Exceptions\Invalid;
 use Bavix\Exceptions\Runtime;
 use Bavix\Helpers\Arr;
 
@@ -89,9 +90,9 @@ class Validator
                     $arg
                 );
             }
-            catch (\Throwable $throwable)
+            catch (Invalid $invalid)
             {
-                $errors[] = $throwable;
+                $errors[] = $invalid;
             }
         }
 
